@@ -48,7 +48,7 @@ nginx-logger-{{ log_type }}:
     - template: jinja
     - user: root
     - group: root
-    - mode: 440
+    - mode: 644
     - source: salt://nginx/templates/config.jinja
     - require:
       - file: /etc/nginx
